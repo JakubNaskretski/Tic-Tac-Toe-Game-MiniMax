@@ -50,7 +50,7 @@ public class InitialView {
         mainPanel = new JPanel(new GridBagLayout());
         GridBagConstraints c = new GridBagConstraints();
 
-        welcomeLabel1 = new JLabel(" Welcome in Tic Tac Toe Game ");
+        welcomeLabel1 = new JLabel(" Welcome to the Tic Tac Toe Game ");
         welcomeLabel1.setFont(new Font("serif", Font.BOLD, 25));
         c.fill = GridBagConstraints.HORIZONTAL;
         c.gridwidth = 2;

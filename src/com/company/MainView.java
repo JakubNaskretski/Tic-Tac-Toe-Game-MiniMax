@@ -71,6 +71,7 @@ public class MainView {
                                 int[] moves = makeComputerBestMove(gameBoard);
                                 drawX.addMarkX(gameField.getPointsList()[moves[0]][moves[1]][0], gameField.getPointsList()[moves[0]][moves[1]][1], gameField.getPointsList()[moves[0] + 1][moves[1] + 1][0], gameField.getPointsList()[moves[0] + 1][moves[1] + 1][1]);
                                 gameBoard[moves[0]][moves[1]] = "X";
+                                movesLeft--;
                                 if (checkIfWin(gameBoard) == "X") {
                                     movesLeft = 0;
                                     new WinPopUpView("Congratulations", "X have won", currentMainView);

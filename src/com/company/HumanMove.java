@@ -159,6 +159,7 @@ public class HumanMove extends Thread implements MouseListener  {
 //                        mainView.setMovesLeft(0);
 //                        new WinPopUpView("Congratulations", "O have won", mainView);
 //                    }
+                    mainView.setMovesLeft(mainView.getMovesLeft()-1);
                     mainView.setWhosMove("X");
                 }
             }
